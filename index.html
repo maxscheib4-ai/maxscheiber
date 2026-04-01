@@ -1,33 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Max Scheiber | Mechanical Engineer</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 40px;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Scheiber | Mechanical Engineering Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #1d4ed8;
+      --light: #f8fafc;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+    }
+
+    body { margin: 0; font-family: Arial; background: var(--light); color: var(--text);} 
+    .container { width: min(1100px, 90%); margin: auto; }
+
+    header { background: var(--bg); color: white; padding: 80px 0; text-align: center; }
+    header h1 { font-size: 3rem; margin: 0; }
+
+    section { padding: 60px 0; }
+    h2 { font-size: 2rem; margin-bottom: 20px; }
+
+    .card { background: var(--card); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 20px; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
+    .btn { display: inline-block; padding: 12px 18px; background: var(--accent); color: white; border-radius: 8px; text-decoration: none; }
+  </style>
 </head>
 <body>
+
+<header>
+  <div class="container">
     <h1>Max Scheiber</h1>
-    <p>Mechanical Engineering Student - Boise State University</p>
+    <p>Mechanical Engineering Student | Boise State University</p>
+    <p>Design • HVAC Systems • Construction • Testing</p>
+  </div>
+</header>
 
+<section>
+  <div class="container">
     <h2>About Me</h2>
-    <p>I am interested in mechanical design, construction, and hands-on engineering work.</p>
+    <div class="card">
+      <p>
+        I am a Mechanical Engineering student at Boise State University with hands-on experience through course-work and internship programs. I have worked on real-world construction projects where I performed
+        pressure drop analysis, fitting loss calculations, and plan takeoffs using Bluebeam. I am especially interested
+        in construction-focused and or engineering roles where design meets real implementation.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Pump Testing System</li>
-        <li>DC Motor Simulation</li>
-        <li>Mechanical Design Project</li>
-    </ul>
+<section>
+  <div class="container">
+    <h2>Projects & Experience</h2>
 
+    <div class="projects">
+
+      <div class="card">
+        <h3>Contra Costa Administration Building HVAC Design</h3>
+        <p><strong>Project Size:</strong> 109,000 SF public safety + admin facility</p>
+        <p>
+          Worked on a large-scale county building project involving HVAC system design and mechanical planning.
+          Performed duct sizing, fitting loss calculations, and Bluebeam takeoffs from construction drawings.
+        </p>
+        <p><strong>What I did:</strong></p>
+        <ul>
+          <li>Calculated fitting losses for HVAC systems</li>
+          <li>Sized ductwork for system efficiency</li>
+          <li>Performed takeoffs using Bluebeam plans</li>
+        </ul>
+        <p><strong>Tools:</strong> Bluebeam, Revit, HVAC calculations</p>
+      </div>
+
+      <div class="card">
+        <h3>MACH (Sutter Modesto Ambulatory Care Complex)</h3>
+        <p><strong>Project Size:</strong> 175,000 SF Medical Facility</p>
+        <p>
+          Contributed to HVAC system design for a large healthcare facility requiring precise environmental control systems.
+          Focused on pressure drop analysis and duct sizing along with fellow engineerings.
+        </p>
+        <p><strong>What I did:</strong></p>
+        <ul>
+          <li>Calculated static pressure drops across systems</li>
+          <li>Performed plan takeoffs using Bluebeam</li>
+          <li>Sized HVAC duct systems for performance</li>
+        </ul>
+        <p><strong>Tools:</strong> Bluebeam, Excel, HVAC design methods</p>
+      </div>
+
+     
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="card">
+      <p>
+        Revit • Bluebeam • HVAC Design • Load Calculations • Pressure Drop Analysis • Duct Sizing • SolidWorks • Microsoft Excel • Welding (MIG) • Problem Solving • Strong Communication 
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Resume</h2>
+    <div class="card">
+      <p>Download my resume below:</p>
+      <a class="btn" href="MaxScheiber_Resume.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
     <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+    <div class="card">
+      <p>Email: maxscheiber@u.boisestate.edu/maxscheib4@gmail.com</p>
+      <p>Phone: (530) 902-6895</p>
+      <p>Location: Boise, ID</p>
+      <p>LinkedIn: linkedin.com/in/max-scheiber</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
